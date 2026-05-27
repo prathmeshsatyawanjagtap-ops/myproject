@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DisciplineX - Goal & Habit Tracker</title>
+  <!-- SEO tags -->
+  <meta name="description" content="DisciplineX is a premium Goal, Habit, and Productivity tracker that helps you build discipline, track consistency, complete tasks, and analyze personal growth.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/components.css">
+  <link rel="stylesheet" href="src/css/landing.css">
+  <link rel="stylesheet" href="src/css/dashboard.css">
+  <link rel="stylesheet" href="src/css/habits.css">
+  <link rel="stylesheet" href="src/css/tasks.css">
+  <link rel="stylesheet" href="src/css/goals.css">
+  <link rel="stylesheet" href="src/css/analytics.css">
+  <link rel="stylesheet" href="src/css/productivity.css">
+  <link rel="stylesheet" href="src/css/settings.css">
+  <link rel="stylesheet" href="src/css/auth.css">
+</head>
+<body>
+
+  <!-- ================= LANDING PAGE VIEW ================= -->
+  <section id="view-landing" class="landing-section">
+    <div class="landing-glow-1"></div>
+    <div class="landing-glow-2"></div>
+    
+    <div class="landing-container">
+      <header class="landing-header">
+        <div class="brand">
+          <i data-lucide="sparkles"></i>
+          <span>DisciplineX</span>
+        </div>
+        <button id="btn-enter-app-nav" class="btn btn-secondary">Enter App</button>
+      </header>
+
+      <main class="hero">
+        <div class="hero-content">
+          <span class="hero-tag">Elevate Your Lifestyle</span>
+          <h1 class="hero-title">Build Discipline.<br>Track Progress.<br><span>Become Better.</span></h1>
+          <p class="hero-desc">
+            DisciplineX merges habits, goals, daily tasks, and self-reflection into a visually stunning, premium workspace designed to power up your focus and consistency.
+          </p>
+          <div class="hero-actions">
+            <button id="btn-hero-start" class="btn btn-primary">Start Tracking Now</button>
+            <a href="#features-anchor" class="btn btn-secondary">Explore Features</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="mockup-window">
+            <div class="mockup-header">
+              <span class="mockup-dot"></span>
+              <span class="mockup-dot"></span>
+              <span class="mockup-dot"></span>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-sidebar">
+                <div class="mockup-item active"></div>
+                <div class="mockup-item"></div>
+                <div class="mockup-item"></div>
+              </div>
+              <div class="mockup-main">
+                <div class="mockup-item" style="width: 60%; height: 18px; margin-bottom: 5px;"></div>
+                <div class="mockup-grid">
+                  <div class="mockup-cell filled"></div>
+                  <div class="mockup-cell filled"></div>
+                  <div class="mockup-cell"></div>
+                  <div class="mockup-cell filled"></div>
+                  <div class="mockup-cell filled-alt"></div>
+                  <div class="mockup-cell"></div>
+                  <div class="mockup-cell filled"></div>
+                  <div class="mockup-cell"></div>
+                  <div class="mockup-cell filled-alt"></div>
+                  <div class="mockup-cell filled"></div>
+                  <div class="mockup-cell filled"></div>
+                  <div class="mockup-cell"></div>
+                  <div class="mockup-cell filled-alt"></div>
+                  <div class="mockup-cell filled"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <section id="features-anchor" class="features-section">
+        <div class="section-header">
+          <h2>Engineered for Self-Mastery</h2>
+          <p>Everything you need to upgrade your routines, hit your milestones, and build lasting habits.</p>
+        </div>
+        <div class="features-grid">
+          <div class="glass-card feature-card">
+            <div class="feature-icon"><i data-lucide="calendar"></i></div>
+            <h3 class="feature-title">Monthly Grid Tracker</h3>
+            <p class="feature-desc">Visual 1-31 day progress matrices for consistency. Keep check streaks, calculate efficiency rates, and write reflections.</p>
+          </div>
+          <div class="glass-card feature-card">
+            <div class="feature-icon"><i data-lucide="check-square"></i></div>
+            <h3 class="feature-title">Smart Task Manager</h3>
+            <p class="feature-desc">Organize duties across coding practice, study, work, and personal targets with priorities, deadlines, and reordering.</p>
+          </div>
+          <div class="glass-card feature-card">
+            <div class="feature-icon"><i data-lucide="bar-chart-2"></i></div>
+            <h3 class="feature-title">Advanced Analytics</h3>
+            <p class="feature-desc">GitHub-style activity heatmaps, weekly progress logs, goal tracking, and water logs gathered in interactive charts.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials-section">
+        <div class="section-header">
+          <h2>Endorsed by Builders & Creators</h2>
+          <p>Read what self-improvement enthusiasts, student coders, and developers say about DisciplineX.</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="glass-card testimonial-card">
+            <p class="testimonial-quote">
+              "DisciplineX is outstanding. The dark mode glass card design looks beautiful on my setup. The Pomodoro timer and monthly grids helped me finish my AWS cert blocks without distraction."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MS</div>
+              <div>
+                <div class="author-name">Marcus Sterling</div>
+                <div class="author-title">Fullstack Dev & Creator</div>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card testimonial-card">
+            <p class="testimonial-quote">
+              "The 'Never Skip 2 Days in a Row' banner keeps me accountable. Seeing my consistency stats in the analytics heatmap triggers a gaming loop. It is literally addictive."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">EL</div>
+              <div>
+                <div class="author-name">Elena Rostova</div>
+                <div class="author-title">Computer Science Undergraduate</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- ================= AUTHENTICATION VIEWS ================= -->
+  
+  <!-- SIGN IN VIEW -->
+  <section id="view-signin" class="auth-section" style="display: none;">
+    <div class="auth-glow-1"></div>
+    <div class="auth-glow-2"></div>
+    <div class="glass-card auth-card">
+      <div class="auth-logo">
+        <h2><span>DisciplineX</span></h2>
+        <p>Discipline Builds Destiny</p>
+      </div>
+      <div class="auth-title-meta">
+        <h3>Sign In</h3>
+        <p>Access your personal self-improvement workspace</p>
+      </div>
+      
+      <div class="auth-error-alert" id="signin-error-alert">
+        <i data-lucide="alert-circle" style="width:16px; height:16px;"></i>
+        <span id="signin-error-text">Invalid credentials.</span>
+      </div>
+
+      <form id="signin-form" onsubmit="return false;" style="display:flex; flex-direction:column; gap:1.25rem;">
+        <div class="form-group" style="margin-bottom: 0;">
+          <label class="form-label">Email Address</label>
+          <div class="auth-input-icon-wrapper">
+            <i data-lucide="mail"></i>
+            <input type="email" id="signin-email" class="form-control" placeholder="name@example.com" required>
+          </div>
+        </div>
+        
+        <div class="form-group" style="margin-bottom: 0;">
+          <label class="form-label">Password</label>
+          <div class="auth-input-icon-wrapper">
+            <i data-lucide="lock"></i>
+            <input type="password" id="signin-password" class="form-control" placeholder="••••••••" required>
+          </div>
+        </div>
+
+        <div class="auth-meta-row">
+          <label class="remember-me-container">
+            <input type="checkbox" id="signin-remember">
+            <span class="remember-me-checkbox"><i data-lucide="check"></i></span>
+            Remember Me
+          </label>
+          <a href="#" class="auth-recovery-link" id="link-forgot-password">Forgot Password?</a>
+        </div>
+
+        <button type="submit" id="btn-signin-submit" class="btn btn-primary" style="height:44px; position:relative;">
+          Sign In
+          <div class="auth-loading-overlay" id="signin-loader">
+            <div class="spinner" style="width:20px; height:20px; border-width:2.5px;"></div>
+          </div>
+        </button>
+      </form>
+
+      <div class="social-divider">Or continue with</div>
+      
+      <button id="btn-google-signin" class="btn btn-secondary btn-social" style="height:42px; display:flex; gap:0.5rem; justify-content:center; align-items:center;">
+        <svg style="width:18px; height:18px;" viewBox="0 0 24 24">
+          <path fill="#ea4335" d="M12.24 10.285V14.4h6.887c-.648 2.41-2.519 4.114-5.136 4.114-3.435 0-6.223-2.788-6.223-6.223s2.788-6.223 6.223-6.223c1.558 0 2.98.573 4.08 1.517l3.076-3.076C19.167 2.057 15.938 1 12.24 1A11.243 11.243 0 0 0 1 12.24a11.243 11.243 0 0 0 11.24 11.24c6.077 0 11.24-4.437 11.24-11.24 0-.763-.068-1.5-.2-2.215H12.24z"/>
+        </svg>
+        Google
+      </button>
+
+      <div class="guest-bypass-option">
+        Don't have an account? <button id="link-goto-signup">Sign Up</button>
+      </div>
+      <div class="guest-bypass-option" style="margin-top:-0.5rem;">
+        Or explore as <button id="btn-signin-guest">Guest User</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREATE ACCOUNT VIEW -->
+  <section id="view-signup" class="auth-section" style="display: none;">
+    <div class="auth-glow-1"></div>
+    <div class="auth-glow-2"></div>
+    <div class="glass-card auth-card">
+      <div class="auth-logo">
+        <h2><span>DisciplineX</span></h2>
+        <p>Discipline Builds Destiny</p>
+      </div>
+      <div class="auth-title-meta">
+        <h3>Create Account</h3>
+        <p>Start tracking and building your habits today</p>
+      </div>
+      
+      <div class="auth-error-alert" id="signup-error-alert">
+        <i data-lucide="alert-circle" style="width:16px; height:16px;"></i>
+        <span id="signup-error-text">Email already registered.</span>
+      </div>
+
+      <form id="signup-form" onsubmit="return false;" style="display:flex; flex-direction:column; gap:1.25rem;">
+        <div class="form-group" style="margin-bottom: 0;">
+          <label class="form-label">Email Address</label>
+          <div class="auth-input-icon-wrapper">
+            <i data-lucide="mail"></i>
+            <input type="email" id="signup-email" class="form-control" placeholder="name@example.com" required>
+          </div>
+        </div>
+        
+        <div class="form-group" style="margin-bottom: 0;">
+          <label class="form-label">Password (Min 6 characters)</label>
+          <div class="auth-input-icon-wrapper">
+            <i data-lucide="lock"></i>
+            <input type="password" id="signup-password" class="form-control" placeholder="••••••••" required>
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 0;">
+          <label class="form-label">Confirm Password</label>
+          <div class="auth-input-icon-wrapper">
+            <i data-lucide="shield-check"></i>
+            <input type="password" id="signup-password-confirm" class="form-control" placeholder="••••••••" required>
+          </div>
+        </div>
+
+        <button type="submit" id="btn-signup-submit" class="btn btn-primary" style="height:44px; position:relative;">
+          Create Account
+          <div class="auth-loading-overlay" id="signup-loader">
+            <div class="spinner" style="width:20px; height:20px; border-width:2.5px;"></div>
+          </div>
+        </button>
+      </form>
+
+      <div class="guest-bypass-option">
+        Already have an account? <button id="link-goto-signin">Sign In</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORGOT PASSWORD VIEW -->
+  <section id="view-forgot" class="auth-section" style="display: none;">
+    <div class="auth-glow-1"></div>
+    <div class="auth-glow-2"></div>
+    <div class="glass-card auth-card">
+      <div class="auth-logo">
+        <h2><span>DisciplineX</span></h2>
+        <p>Discipline Builds Destiny</p>
+      </div>
+      <div class="auth-title-meta">
+        <h3>Reset Password</h3>
+        <p>Confirm your email to set a new password</p>
+      </div>
+      
+      <div class="auth-error-alert" id="forgot-error-alert">
+        <i data-lucide="alert-circle" style="width:16px; height:16px;"></i>
+        <span id="forgot-error-text">Email not found.</span>
+      </div>
+
+      <!-- State 1: Enter Email -->
+      <form id="forgot-email-form" onsubmit="return false;" style="display:flex; flex-direction:column; gap:1.25rem;">
+        <div class="form-group" style="margin-bottom: 0;">
+          <label class="form-label">Registered Email</label>
+          <div class="auth-input-icon-wrapper">
+            <i data-lucide="mail"></i>
+            <input type="email" id="forgot-email" class="form-control" placeholder="name@example.com" required>
+          </div>
+        </div>
+        <button type="submit" id="btn-forgot-email-submit" class="btn btn-primary" style="height:44px; position:relative;">
+          Send Reset Token
+          <div class="auth-loading-overlay" id="forgot-loader-1">
+            <div class="spinner" style="width:20px; height:20px; border-width:2.5px;"></div>
+          </div>
+        </button>
+      </form>
+
+      <!-- State 2: Enter Token & New Password -->
+      <form id="forgot-reset-form" onsubmit="return false;" style="display:none; flex-direction:column; gap:1.25rem;">
+        <div class="form-group" style="margin-bottom: 0;">
+          <label class="form-label">Simulated Reset Token (Check code below)</label>
+          <div class="auth-input-icon-wrapper">
+            <i data-lucide="key"></i>
+            <input type="text" id="forgot-token-val" class="form-control" placeholder="e.g. DX-1234" required>
+          </div>
+          <span style="font-size:0.72rem; color:var(--accent-cyan); font-weight:600; text-align:center; margin-top:0.25rem;" id="simulated-token-hint"></span>
+        </div>
+        <div class="form-group" style="margin-bottom: 0;">
+          <label class="form-label">New Password (Min 6 chars)</label>
+          <div class="auth-input-icon-wrapper">
+            <i data-lucide="lock"></i>
+            <input type="password" id="forgot-new-password" class="form-control" placeholder="••••••••" required>
+          </div>
+        </div>
+        <button type="submit" id="btn-forgot-reset-submit" class="btn btn-primary" style="height:44px; position:relative;">
+          Reset Password
+          <div class="auth-loading-overlay" id="forgot-loader-2">
+            <div class="spinner" style="width:20px; height:20px; border-width:2.5px;"></div>
+          </div>
+        </button>
+      </form>
+
+      <div class="guest-bypass-option">
+        Back to <button id="link-forgot-goto-signin">Sign In</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ONBOARDING SETUP VIEW -->
+  <section id="view-onboarding" class="auth-section" style="display: none;">
+    <div class="auth-glow-1"></div>
+    <div class="auth-glow-2"></div>
+    <div class="glass-card auth-card onboarding-card">
+      <div class="auth-logo">
+        <h2><span>DisciplineX</span></h2>
+        <p>Discipline Builds Destiny</p>
+      </div>
+      
+      <div class="onboarding-step-indicator">
+        <div class="onboarding-dot active" id="ob-dot-1"></div>
+        <div class="onboarding-dot" id="ob-dot-2"></div>
+      </div>
+
+      <!-- Panel 1: Profile Setup -->
+      <div class="onboarding-panel active" id="ob-panel-1">
+        <div class="auth-title-meta">
+          <h3>Setup Profile</h3>
+          <p>Tell us how you would like to be called</p>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Your Name</label>
+          <input type="text" id="onboarding-name" class="form-control" placeholder="e.g. Alex Mercer" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Your Daily Focus / Motto</label>
+          <input type="text" id="onboarding-motto" class="form-control" placeholder="e.g. Discipline is freedom.">
+        </div>
+        <button type="button" id="btn-onboarding-next" class="btn btn-primary" style="height:44px; margin-top:1rem;">Continue</button>
+      </div>
+
+      <!-- Panel 2: Avatar selection -->
+      <div class="onboarding-panel" id="ob-panel-2">
+        <div class="auth-title-meta">
+          <h3>Choose Avatar</h3>
+          <p>Pick a representational graphic or upload one</p>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Select Pre-defined Avatar</label>
+          <div class="avatar-selection-grid" id="onboarding-avatar-grid">
+            <div class="avatar-select-item selected" data-avatar="coder">💻</div>
+            <div class="avatar-select-item" data-avatar="runner">🏃</div>
+            <div class="avatar-select-item" data-avatar="student">📚</div>
+            <div class="avatar-select-item" data-avatar="artist">🎨</div>
+          </div>
+        </div>
+        <div class="social-divider">Or custom photo</div>
+        <div class="form-group">
+          <div class="file-input-wrapper">
+            <button type="button" class="btn btn-secondary" style="width:100%;"><i data-lucide="upload"></i> Upload Image File</button>
+            <input type="file" id="onboarding-avatar-file" accept="image/*">
+          </div>
+          <span style="font-size:0.7rem; color:var(--text-muted); text-align:center; display:block; margin-top:0.25rem;" id="onboarding-file-status">No custom file chosen</span>
+        </div>
+        
+        <div style="display:flex; gap:0.75rem; margin-top:1rem;">
+          <button type="button" id="btn-onboarding-prev" class="btn btn-secondary" style="flex:1;">Back</button>
+          <button type="button" id="btn-onboarding-finish" class="btn btn-primary" style="flex:1.5;">Finish Setup</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- USER SIGN UP ACHIEVEMENT WELCOME POPUP OVERLAY -->
+  <div class="welcome-overlay" id="view-welcome-screen">
+    <div class="welcome-trophy-ring">
+      <i data-lucide="award"></i>
+    </div>
+    <h2 style="font-family: var(--font-display); font-size: 2rem; font-weight:800; text-align:center;">Welcome to DisciplineX!</h2>
+    <p style="color:var(--text-secondary); text-align:center; max-width:320px; font-size:0.9rem; line-height:1.5;">
+      Your account was created successfully. Let's start tracking your consistency and building your destiny.
+    </p>
+    <button id="btn-welcome-screen-close" class="btn btn-primary" style="min-width: 140px; margin-top:1rem;">Enter Workspace</button>
+  </div>
+
+  <!-- Simulated Google Chooser Overlay Modal -->
+  <div class="modal-overlay" id="modal-google-chooser">
+    <div class="modal-content" style="max-width:360px; padding:1.5rem; text-align:center;">
+      <div style="display:flex; justify-content:center; margin-bottom:1rem;">
+        <svg style="width:36px; height:36px;" viewBox="0 0 24 24">
+          <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+          <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+          <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22c-.22-.66-.35-1.36-.35-2.09z"/>
+          <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+        </svg>
+      </div>
+      <h3 style="font-family:var(--font-display); font-size:1.15rem; font-weight:700; margin-bottom:0.25rem;">Sign in with Google</h3>
+      <p style="font-size:0.78rem; color:var(--text-muted); margin-bottom:1.5rem;">Choose an account to continue to DisciplineX</p>
+      
+      <div style="display:flex; flex-direction:column; gap:0.5rem; margin-bottom:1.5rem;" id="google-accounts-picker">
+        <div class="sidebar-profile google-mock-account" data-email="alex.mercer@gmail.com" data-name="Alex Mercer" style="margin-top:0; padding:0.6rem 0.85rem; border-radius:8px;">
+          <div class="avatar-wrapper" style="width:30px; height:30px; font-size:0.75rem;">AM</div>
+          <div class="profile-info" style="align-items:flex-start;">
+            <span class="name" style="font-size:0.8rem;">Alex Mercer</span>
+            <span class="subtitle" style="font-size:0.68rem;">alex.mercer@gmail.com</span>
+          </div>
+        </div>
+        <div class="sidebar-profile google-mock-account" data-email="prath.dev@gmail.com" data-name="Prath Dev" style="margin-top:0; padding:0.6rem 0.85rem; border-radius:8px;">
+          <div class="avatar-wrapper" style="width:30px; height:30px; font-size:0.75rem; background:linear-gradient(135deg, var(--accent-cyan), var(--accent-emerald))">PD</div>
+          <div class="profile-info" style="align-items:flex-start;">
+            <span class="name" style="font-size:0.8rem;">Prath Dev</span>
+            <span class="subtitle" style="font-size:0.68rem;">prath.dev@gmail.com</span>
+          </div>
+        </div>
+      </div>
+      
+      <button class="btn btn-secondary" style="font-size:0.8rem;" data-close>Cancel</button>
+    </div>
+  </div>
+
+  <!-- ================= MAIN WEB APPLICATION VIEW ================= -->
+  <main id="view-app" class="app-container" style="display: none;">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="app-sidebar" id="app-sidebar">
+      <div class="brand">
+        <i data-lucide="sparkles"></i>
+        <span>DisciplineX</span>
+      </div>
+      
+      <ul class="nav-links">
+        <li class="nav-item active" data-target="dashboard">
+          <a href="#"><i data-lucide="layout-dashboard"></i>Dashboard</a>
+        </li>
+        <li class="nav-item" data-target="habits">
+          <a href="#"><i data-lucide="check-circle-2"></i>Habits</a>
+        </li>
+        <li class="nav-item" data-target="tasks">
+          <a href="#"><i data-lucide="list-todo"></i>Tasks</a>
+        </li>
+        <li class="nav-item" data-target="goals">
+          <a href="#"><i data-lucide="target"></i>Goals</a>
+        </li>
+        <li class="nav-item" data-target="analytics">
+          <a href="#"><i data-lucide="bar-chart-2"></i>Analytics</a>
+        </li>
+        <li class="nav-item" data-target="productivity">
+          <a href="#"><i data-lucide="timer"></i>Productivity</a>
+        </li>
+        <li class="nav-item" data-target="settings">
+          <a href="#"><i data-lucide="settings"></i>Settings</a>
+        </li>
+        <li class="nav-item" id="nav-item-logout" style="margin-top: 1rem;">
+          <a href="#" style="color: var(--accent-rose);"><i data-lucide="log-out"></i>Logout</a>
+        </li>
+      </ul>
+
+      <!-- Profile indicator -->
+      <div class="sidebar-profile" id="sidebar-profile-btn">
+        <div class="avatar-wrapper" id="sidebar-avatar">AM</div>
+        <div class="profile-info">
+          <span class="name" id="sidebar-name">Alex Mercer</span>
+          <span class="subtitle" id="sidebar-motto">Discipline rules.</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Content Workspace -->
+    <div class="main-wrapper">
+      
+      <!-- Top Nav Bar -->
+      <header class="top-nav">
+        <div class="page-title">
+          <h1 id="top-nav-title">Dashboard</h1>
+          <p id="top-nav-date">Wednesday, May 27</p>
+        </div>
+        <div class="top-actions">
+          <button id="theme-toggle-btn" class="icon-btn" title="Toggle Theme">
+            <i data-lucide="sun" id="theme-sun-icon" style="display: none;"></i>
+            <i data-lucide="moon" id="theme-moon-icon"></i>
+          </button>
+          <button id="noti-btn" class="icon-btn" style="position: relative;" title="Achievements">
+            <i data-lucide="trophy"></i>
+            <span id="badge-alert-dot" style="position: absolute; top: 8px; right: 8px; width: 8px; height: 8px; background-color: var(--accent-rose); border-radius: var(--radius-round); display: none;"></span>
+          </button>
+          <button id="menu-toggle-btn" class="icon-btn" style="display: none;" title="Toggle Sidebar">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </header>
+
+      <!-- ================= VIEW: DASHBOARD ================= -->
+      <section id="section-dashboard" class="content-section active">
+        <div class="dashboard-grid">
+          
+          <!-- Welcoming Banner -->
+          <div class="welcome-banner">
+            <div class="banner-content">
+              <h2 class="banner-title">Welcome back, <span id="dash-username">Alex</span></h2>
+              <p class="banner-quote" id="dash-quote">"Atomic adjustments compound over time into massive breakthroughs."</p>
+            </div>
+            <div class="banner-stats">
+              <div class="banner-stat-card">
+                <span class="banner-stat-val" id="dash-stat-habits">8/12</span>
+                <span class="banner-stat-lbl">Habits Today</span>
+              </div>
+              <div class="banner-stat-card">
+                <span class="banner-stat-val" id="dash-stat-tasks">3/5</span>
+                <span class="banner-stat-lbl">Tasks Done</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left Main Block -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            
+            <!-- Focus Widget -->
+            <div class="glass-card today-focus-card">
+              <div class="glass-card-header">
+                <h3 class="glass-card-title"><i data-lucide="eye" style="color: var(--accent-violet);"></i>Today's Core Focus</h3>
+              </div>
+              <div id="focus-edit-state" class="focus-input-wrapper" style="display: none;">
+                <input type="text" id="focus-input-field" class="form-control" placeholder="What is your single most important focus today?">
+                <button id="focus-save-btn" class="btn btn-primary">Save</button>
+              </div>
+              <div id="focus-view-state" class="focus-display-box">
+                <div class="focus-text-group">
+                  <div class="focus-checkbox" id="focus-checkbox-box">
+                    <i data-lucide="check"></i>
+                  </div>
+                  <span class="focus-text" id="focus-text-val">Establish codebase layout structure</span>
+                </div>
+                <button id="focus-edit-btn" class="btn btn-secondary btn-icon-only" title="Edit Focus"><i data-lucide="edit-3" style="width: 14px; height: 14px;"></i></button>
+              </div>
+            </div>
+
+            <!-- Streaks Summary Grid -->
+            <div class="glass-card">
+              <div class="glass-card-header">
+                <h3 class="glass-card-title"><i data-lucide="zap" style="color: var(--accent-amber);"></i>Active Streaks</h3>
+              </div>
+              <div id="dashboard-streaks-list" style="display: flex; flex-direction: column; gap: 0.85rem;">
+                <!-- Filled dynamically -->
+              </div>
+            </div>
+
+            <!-- Calendar Widget -->
+            <div class="glass-card" id="dashboard-calendar-card">
+              <div class="glass-card-header">
+                <h3 class="glass-card-title"><i data-lucide="calendar" style="color: var(--accent-cyan);"></i>Month Overview</h3>
+              </div>
+              <div class="calendar-overview">
+                <div class="calendar-header">
+                  <span class="calendar-month-name" id="calendar-month-year">May 2026</span>
+                </div>
+                <div class="calendar-grid">
+                  <div class="calendar-weekday">Su</div>
+                  <div class="calendar-weekday">Mo</div>
+                  <div class="calendar-weekday">Tu</div>
+                  <div class="calendar-weekday">We</div>
+                  <div class="calendar-weekday">Th</div>
+                  <div class="calendar-weekday">Fr</div>
+                  <div class="calendar-weekday">Sa</div>
+                </div>
+                <div class="calendar-grid" id="calendar-days-grid">
+                  <!-- Generated by JS -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Sidebar Block -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            
+            <!-- Productivity Score Ring -->
+            <div class="glass-card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; padding: 2rem;">
+              <h3 class="glass-card-title" style="margin-bottom: 0.5rem;"><i data-lucide="activity" style="color: var(--accent-emerald);"></i>Productivity Score</h3>
+              <div class="progress-ring-container">
+                <svg width="140" height="140">
+                  <circle cx="70" cy="70" r="60" stroke="var(--border-color)" stroke-width="8" fill="transparent"></circle>
+                  <circle id="score-ring-fill" cx="70" cy="70" r="60" stroke="var(--accent-emerald)" stroke-width="8" fill="transparent"
+                          class="progress-ring-circle" stroke-dasharray="377" stroke-dashoffset="377"></circle>
+                </svg>
+                <div class="progress-ring-label">
+                  <span id="score-percentage-val">0%</span>
+                  <span>efficiency</span>
+                </div>
+              </div>
+              <p style="font-size: 0.8rem; text-align: center; color: var(--text-secondary); line-height: 1.4;">Based on habits completed and tasks ticked off today.</p>
+            </div>
+
+            <!-- Achievement Badges Card -->
+            <div class="glass-card">
+              <div class="glass-card-header">
+                <h3 class="glass-card-title"><i data-lucide="award" style="color: var(--accent-rose);"></i>Badges & Trophies</h3>
+              </div>
+              <div class="badges-container" id="dashboard-badges-container">
+                <!-- E.g.
+                <div class="badge-item unlocked" data-tooltip="Tracked habit for 3 days">
+                  <div class="badge-icon-circle"><i data-lucide="sparkles"></i></div>
+                  <span class="badge-lbl">Pioneer</span>
+                </div>
+                -->
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= VIEW: HABITS ================= -->
+      <section id="section-habits" class="content-section">
+        <div class="habits-container">
+          
+          <div class="habits-controls">
+            <button id="add-habit-btn" class="btn btn-primary"><i data-lucide="plus"></i> Add New Habit</button>
+            
+            <div class="never-skip-banner">
+              <i data-lucide="alert-triangle"></i>
+              <div class="never-skip-banner-content">
+                <h4>"Never Skip 2 Days in a Row" Rule</h4>
+                <p>Skipping one day is an accident. Skipping two days is the start of a new bad habit. Stay focused!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Habit Table Grid card -->
+          <div class="glass-card habit-grid-card">
+            <div class="glass-card-header" style="margin-bottom: 0;">
+              <h3 class="glass-card-title"><i data-lucide="grid" style="color: var(--accent-cyan);"></i>Monthly Tracking Board</h3>
+            </div>
+            
+            <div class="grid-scroll-wrapper">
+              <table class="habit-grid-table">
+                <thead>
+                  <tr id="habit-table-headers">
+                    <!-- Dynamic Headers (sticky, followed by 1-31 days headers, then summary columns) -->
+                  </tr>
+                </thead>
+                <tbody id="habit-table-body">
+                  <!-- Dynamic Habit Rows -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Monthly Reflection area -->
+          <div class="glass-card">
+            <div class="glass-card-header">
+              <h3 class="glass-card-title"><i data-lucide="book-open" style="color: var(--accent-violet);"></i>Monthly Growth Reflection</h3>
+            </div>
+            <div class="reflections-grid">
+              <div class="form-group">
+                <label class="reflection-title"><i data-lucide="check-circle" style="color: var(--accent-emerald); width: 16px;"></i>Biggest Achievement</label>
+                <textarea id="reflect-achievement-field" class="form-control reflection-textarea" placeholder="What are you most proud of accomplishing this month?"></textarea>
+              </div>
+              <div class="form-group">
+                <label class="reflection-title"><i data-lucide="alert-circle" style="color: var(--accent-rose); width: 16px;"></i>Needs Improvement</label>
+                <textarea id="reflect-improvement-field" class="form-control reflection-textarea" placeholder="Which routines fell short? How can you refine your setup?"></textarea>
+              </div>
+              <div class="form-group">
+                <label class="reflection-title"><i data-lucide="message-square" style="color: var(--accent-cyan); width: 16px;"></i>Notes & Observations</label>
+                <textarea id="reflect-notes-field" class="form-control reflection-textarea" placeholder="Write down general logs, observations, and sleep cycle notes."></textarea>
+              </div>
+            </div>
+            <div style="display: flex; justify-content: flex-end; margin-top: 1rem;">
+              <button id="save-reflections-btn" class="btn btn-primary">Save Reflections</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= VIEW: TASKS ================= -->
+      <section id="section-tasks" class="content-section">
+        <div class="tasks-container">
+          
+          <!-- Filters & sorting panel -->
+          <div class="glass-card tasks-filter-bar">
+            <div class="search-wrapper">
+              <i data-lucide="search"></i>
+              <input type="text" id="task-search-input" class="form-control" placeholder="Search tasks...">
+            </div>
+            
+            <div class="filter-tabs" id="task-filter-tabs">
+              <button class="filter-tab active" data-filter="all">All</button>
+              <button class="filter-tab" data-filter="Coding">Coding</button>
+              <button class="filter-tab" data-filter="Study">Study</button>
+              <button class="filter-tab" data-filter="Personal">Personal</button>
+              <button class="filter-tab" data-filter="Daily">Daily</button>
+              <button class="filter-tab" data-filter="Weekly">Weekly</button>
+            </div>
+
+            <div class="sort-select-wrapper">
+              <select id="task-sort-select" class="form-control">
+                <option value="custom">Manual Order</option>
+                <option value="date">Due Date</option>
+                <option value="priority">Priority</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Quick Add Task form -->
+          <form id="task-quick-add-form" class="task-quick-add-form" onsubmit="return false;">
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label">Task Name</label>
+              <input type="text" id="new-task-text" class="form-control" placeholder="What needs doing?" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label">Category</label>
+              <select id="new-task-category" class="form-control">
+                <option value="Daily">Daily</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Coding">Coding</option>
+                <option value="Study">Study</option>
+                <option value="Personal">Personal</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label">Priority</label>
+              <select id="new-task-priority" class="form-control">
+                <option value="low">Low</option>
+                <option value="medium" selected>Medium</option>
+                <option value="high">High</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label">Due Date</label>
+              <input type="date" id="new-task-due" class="form-control">
+            </div>
+            <button type="submit" id="new-task-submit" class="btn btn-primary" style="height: 42px;"><i data-lucide="plus"></i> Add</button>
+          </form>
+
+          <!-- List Container -->
+          <div class="tasks-list" id="tasks-list-container">
+            <!-- Dynamic Task Rows -->
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= VIEW: GOALS ================= -->
+      <section id="section-goals" class="content-section">
+        <div class="goals-container">
+          
+          <div class="goals-header">
+            <div class="period-tabs" id="goal-period-tabs">
+              <button class="period-tab active" data-period="all">All Goals</button>
+              <button class="period-tab" data-period="daily">Daily</button>
+              <button class="period-tab" data-period="weekly">Weekly</button>
+              <button class="period-tab" data-period="monthly">Monthly</button>
+              <button class="period-tab" data-period="yearly">Yearly</button>
+            </div>
+            <button id="add-goal-btn" class="btn btn-primary"><i data-lucide="plus"></i> Create Goal</button>
+          </div>
+
+          <!-- Cards Grid -->
+          <div class="goals-grid" id="goals-grid-container">
+            <!-- Dynamic Goal Cards -->
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= VIEW: ANALYTICS ================= -->
+      <section id="section-analytics" class="content-section">
+        <div class="analytics-container">
+          
+          <!-- Statistics Numbers Row -->
+          <div class="trend-stats-grid">
+            <div class="glass-card trend-card">
+              <div class="trend-icon-box blue"><i data-lucide="check-circle-2"></i></div>
+              <div class="trend-info">
+                <span class="trend-val" id="trend-habit-efficiency">85%</span>
+                <span class="trend-lbl">Habit Efficiency</span>
+              </div>
+            </div>
+            <div class="glass-card trend-card">
+              <div class="trend-icon-box purple"><i data-lucide="flame"></i></div>
+              <div class="trend-info">
+                <span class="trend-val" id="trend-max-streak">12 Days</span>
+                <span class="trend-lbl">Max Streak</span>
+              </div>
+            </div>
+            <div class="glass-card trend-card">
+              <div class="trend-icon-box emerald"><i data-lucide="target"></i></div>
+              <div class="trend-info">
+                <span class="trend-val" id="trend-goal-ratio">4/5</span>
+                <span class="trend-lbl">Goals Completed</span>
+              </div>
+            </div>
+            <div class="glass-card trend-card">
+              <div class="trend-icon-box rose"><i data-lucide="droplet"></i></div>
+              <div class="trend-info">
+                <span class="trend-val" id="trend-water-avg">2.1L</span>
+                <span class="trend-lbl">Daily Water Avg</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Heatmap Container -->
+          <div class="glass-card heatmap-card">
+            <div class="glass-card-header">
+              <h3 class="glass-card-title"><i data-lucide="grid-3x3" style="color: var(--accent-emerald);"></i>Productivity Activity Map</h3>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">Daily logs tracker (habits & tasks)</span>
+            </div>
+            
+            <div class="heatmap-scroll-wrapper">
+              <div class="heatmap-wrapper">
+                <div class="heatmap-days-grid" id="analytics-heatmap-grid">
+                  <!-- JS builds calendar squares -->
+                </div>
+                <div class="heatmap-footer">
+                  <span>Scroll horizontally for full year history</span>
+                  <div class="heatmap-legend">
+                    <span>Less</span>
+                    <div class="heatmap-legend-cell level-0"></div>
+                    <div class="heatmap-legend-cell level-1"></div>
+                    <div class="heatmap-legend-cell level-2"></div>
+                    <div class="heatmap-legend-cell level-3"></div>
+                    <div class="heatmap-legend-cell level-4"></div>
+                    <span>More</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Charts Layout -->
+          <div class="charts-grid">
+            <div class="glass-card chart-card">
+              <div class="glass-card-header">
+                <h3 class="glass-card-title"><i data-lucide="trending-up" style="color: var(--accent-violet);"></i>Consistency Trend</h3>
+              </div>
+              <div class="chart-wrapper">
+                <canvas id="chart-consistency-line"></canvas>
+              </div>
+            </div>
+            
+            <div class="glass-card chart-card">
+              <div class="glass-card-header">
+                <h3 class="glass-card-title"><i data-lucide="pie-chart" style="color: var(--accent-cyan);"></i>Category Breakdown</h3>
+              </div>
+              <div class="chart-wrapper">
+                <canvas id="chart-category-pie"></canvas>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= VIEW: PRODUCTIVITY ================= -->
+      <section id="section-productivity" class="content-section">
+        <div class="productivity-grid">
+          
+          <!-- Focus Pomodoro Timer -->
+          <div class="glass-card timer-card">
+            <div class="glass-card-header">
+              <h3 class="glass-card-title"><i data-lucide="hourglass" style="color: var(--accent-violet);"></i>Focus session Timer</h3>
+            </div>
+            
+            <div class="timer-container">
+              <div class="timer-modes" id="focus-timer-modes">
+                <button class="timer-mode-btn active" data-mode="work">Work (25m)</button>
+                <button class="timer-mode-btn" data-mode="short">Short Break (5m)</button>
+                <button class="timer-mode-btn" data-mode="long">Long Break (15m)</button>
+              </div>
+              
+              <div class="timer-display-circle">
+                <svg width="220" height="220">
+                  <circle cx="110" cy="110" r="95" stroke="var(--border-color)" stroke-width="10" fill="transparent"></circle>
+                  <circle id="timer-ring-fill" cx="110" cy="110" r="95" stroke="var(--accent-violet)" stroke-width="10" fill="transparent"
+                          class="progress-ring-circle" stroke-dasharray="597" stroke-dashoffset="0"></circle>
+                </svg>
+                <div class="timer-time" id="timer-clock-text">25:00</div>
+              </div>
+
+              <div class="timer-controls">
+                <button id="timer-reset-btn" class="timer-ctrl-btn" title="Reset Timer"><i data-lucide="rotate-ccw"></i></button>
+                <button id="timer-play-btn" class="timer-ctrl-btn play" title="Start Timer"><i data-lucide="play" id="timer-play-icon"></i></button>
+                <button id="timer-skip-btn" class="timer-ctrl-btn" title="Skip Session"><i data-lucide="skip-forward"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Log Utilities (Water + Mood) -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            
+            <!-- Water Intake Tracker -->
+            <div class="glass-card water-card">
+              <div class="glass-card-header">
+                <h3 class="glass-card-title"><i data-lucide="droplet" style="color: var(--accent-cyan);"></i>Water Intake</h3>
+              </div>
+              <div class="water-container">
+                <div class="water-glass-mockup">
+                  <div class="water-fluid" id="water-fluid-fill">
+                    <div class="water-wave-back"></div>
+                    <div class="water-wave"></div>
+                  </div>
+                </div>
+                <div class="water-stats-lbl" id="water-stat-display">
+                  1250 <span>ml logged</span>
+                </div>
+                <div class="water-actions">
+                  <button id="water-add-250" class="btn btn-secondary">+ 250ml</button>
+                  <button id="water-add-500" class="btn btn-secondary">+ 500ml</button>
+                  <button id="water-reset" class="btn btn-danger btn-icon-only" title="Reset Logs"><i data-lucide="refresh-cw" style="width: 14px; height: 14px;"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mood Tracker -->
+            <div class="glass-card">
+              <div class="glass-card-header">
+                <h3 class="glass-card-title"><i data-lucide="smile" style="color: var(--accent-amber);"></i>How is your Mood?</h3>
+              </div>
+              <div class="mood-tracker-box">
+                <div class="mood-emojis" id="mood-emojis-container">
+                  <button class="mood-btn" data-mood="excellent" data-mood-name="excellent">🚀</button>
+                  <button class="mood-btn" data-mood="good" data-mood-name="good">😊</button>
+                  <button class="mood-btn" data-mood="neutral" data-mood-name="neutral">😐</button>
+                  <button class="mood-btn" data-mood="meh" data-mood-name="meh">🥱</button>
+                  <button class="mood-btn" data-mood="bad" data-mood-name="bad">😔</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Daily Reflection Journal -->
+          <div class="glass-card journal-log-section">
+            <div class="glass-card-header">
+              <h3 class="glass-card-title"><i data-lucide="pen-tool" style="color: var(--accent-emerald);"></i>Daily Journal Log</h3>
+            </div>
+            
+            <form id="journal-editor-form" class="journal-form" onsubmit="return false;">
+              <div class="form-group">
+                <label class="form-label">Entry Title</label>
+                <input type="text" id="journal-title-field" class="form-control" placeholder="Summarize your day (e.g. Coding breakthrough, Rest day)">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Journal Content</label>
+                <textarea id="journal-content-field" class="form-control" style="min-height: 120px;" placeholder="Write down reflections, lessons learned, and what you are grateful for today..."></textarea>
+              </div>
+              <div style="display: flex; justify-content: flex-end;">
+                <button type="submit" id="journal-save-btn" class="btn btn-primary">Save Journal Entry</button>
+              </div>
+            </form>
+
+            <div class="journal-history-list" id="journal-history-container">
+              <!-- JS generates list -->
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= VIEW: SETTINGS ================= -->
+      <section id="section-settings" class="content-section">
+        <div class="settings-grid">
+          
+          <!-- Left settings panels -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            
+            <!-- Profile settings -->
+            <div class="glass-card">
+              <div class="glass-card-header">
+                <h3 class="glass-card-title"><i data-lucide="user" style="color: var(--accent-violet);"></i>Manage Profile</h3>
+              </div>
+              <form id="settings-profile-form" onsubmit="return false;">
+                <div class="form-group">
+                  <label class="form-label">Profile Name</label>
+                  <input type="text" id="settings-name-input" class="form-control" placeholder="Alex Mercer" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Daily Motto / Motivation Quote</label>
+                  <input type="text" id="settings-motto-input" class="form-control" placeholder="Stay focused, stay consistent.">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Select Avatar Icon</label>
+                  <div class="avatar-selection-grid" id="settings-avatar-grid">
+                    <div class="avatar-select-item" data-avatar="coder">💻</div>
+                    <div class="avatar-select-item" data-avatar="runner">🏃</div>
+                    <div class="avatar-select-item" data-avatar="student">📚</div>
+                    <div class="avatar-select-item" data-avatar="artist">🎨</div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Upload Custom Profile Picture</label>
+                  <div class="file-input-wrapper">
+                    <button type="button" class="btn btn-secondary" style="width: 100%;"><i data-lucide="image"></i> Choose Image File</button>
+                    <input type="file" id="settings-avatar-upload" accept="image/*">
+                  </div>
+                </div>
+                <div style="display: flex; justify-content: flex-end; margin-top: 1.5rem;">
+                  <button type="submit" class="btn btn-primary">Update Profile</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Account Settings -->
+            <div class="glass-card">
+              <div class="glass-card-header">
+                <h3 class="glass-card-title"><i data-lucide="shield" style="color: var(--accent-rose);"></i>Account Settings</h3>
+              </div>
+              <form id="settings-account-form" onsubmit="return false;">
+                <div class="form-group">
+                  <span id="account-status-text" style="font-size:0.82rem; font-weight:600; color:var(--accent-cyan);">Currently Logged in as: Guest</span>
+                </div>
+                <div class="form-group" id="settings-email-group" style="display:none;">
+                  <label class="form-label">Update Email</label>
+                  <input type="email" id="settings-email-input" class="form-control">
+                </div>
+                <div class="form-group" id="settings-pass-group" style="display:none;">
+                  <label class="form-label">Update Password</label>
+                  <input type="password" id="settings-pass-input" class="form-control" placeholder="New password (min 6 chars)">
+                </div>
+                <div id="settings-account-actions" style="display:flex; flex-direction:column; gap:0.5rem; margin-top:1rem;">
+                  <button type="submit" id="settings-account-update-btn" class="btn btn-primary" style="display:none;">Save Account Details</button>
+                  <button type="button" id="settings-merge-guest-btn" class="btn btn-secondary" style="width:100%;"><i data-lucide="git-merge"></i> Merge Guest Data</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Workspace widget toggles -->
+            <div class="glass-card">
+              <div class="glass-card-header">
+                <h3 class="glass-card-title"><i data-lucide="layout" style="color: var(--accent-cyan);"></i>Workspace Layout</h3>
+              </div>
+              <div style="display: flex; flex-direction: column;">
+                <div class="switch-group">
+                  <div class="switch-info">
+                    <span class="switch-title">Water intake tracker</span>
+                    <span class="switch-desc">Toggle the fluid logging water widget on the productivity panel</span>
+                  </div>
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="layout-toggle-water" checked>
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+                
+                <div class="switch-group">
+                  <div class="switch-info">
+                    <span class="switch-title">Mood logs tracker</span>
+                    <span class="switch-desc">Toggle the emoji-based mood survey widget on panels</span>
+                  </div>
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="layout-toggle-mood" checked>
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+
+                <div class="switch-group">
+                  <div class="switch-info">
+                    <span class="switch-title">Focus Pomodoro timer</span>
+                    <span class="switch-desc">Toggle the session stopwatch timer widget</span>
+                  </div>
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="layout-toggle-timer" checked>
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+
+                <div class="switch-group">
+                  <div class="switch-info">
+                    <span class="switch-title">Journal entries log</span>
+                    <span class="switch-desc">Toggle the text-based self reflection journal block</span>
+                  </div>
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="layout-toggle-journal" checked>
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right settings panels -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            
+            <!-- Backup & Export settings -->
+            <div class="glass-card">
+              <div class="glass-card-header">
+                <h3 class="glass-card-title"><i data-lucide="database" style="color: var(--accent-emerald);"></i>Backup & Portability</h3>
+              </div>
+              <div class="backup-actions">
+                <p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.4;">Export all data including habits, history, goals and journals as a JSON file, or restore a previous session.</p>
+                <button id="backup-export-btn" class="btn btn-secondary"><i data-lucide="download"></i> Download Export (JSON)</button>
+                <div class="file-input-wrapper">
+                  <button class="btn btn-secondary" style="width: 100%;"><i data-lucide="upload"></i> Restore Backup (JSON)</button>
+                  <input type="file" id="backup-import-file" accept=".json">
+                </div>
+              </div>
+            </div>
+
+            <!-- Danger Zone settings -->
+            <div class="glass-card danger-zone">
+              <div class="glass-card-header">
+                <h3 class="glass-card-title"><i data-lucide="shield-alert" style="color: var(--accent-rose);"></i>Danger Zone</h3>
+              </div>
+              <p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.4; margin-bottom: 1.25rem;">Clearing all data will permanently wipe your LocalStorage state and reload the default profile. This action cannot be undone.</p>
+              <button id="backup-reset-btn" class="btn btn-danger" style="width: 100%;"><i data-lucide="trash-2"></i> Wipe All Data</button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Mobile Navigation Bar -->
+    <nav class="mobile-nav">
+      <a href="#" class="mobile-nav-item active" data-target="dashboard">
+        <i data-lucide="layout-dashboard"></i>
+        <span>Dash</span>
+      </a>
+      <a href="#" class="mobile-nav-item" data-target="habits">
+        <i data-lucide="check-circle-2"></i>
+        <span>Habits</span>
+      </a>
+      <a href="#" class="mobile-nav-item" data-target="tasks">
+        <i data-lucide="list-todo"></i>
+        <span>Tasks</span>
+      </a>
+      <a href="#" class="mobile-nav-item" data-target="goals">
+        <i data-lucide="target"></i>
+        <span>Goals</span>
+      </a>
+      <a href="#" class="mobile-nav-item" data-target="analytics">
+        <i data-lucide="bar-chart-2"></i>
+        <span>Stats</span>
+      </a>
+    </nav>
+
+    <!-- Floating Action Button (Quick Add) -->
+    <button class="floating-add-btn" id="floating-add-btn" title="Quick Add">
+      <i data-lucide="plus" style="width: 24px; height: 24px;"></i>
+    </button>
+
+    <!-- Quick Add Sub Menu -->
+    <div class="quick-add-menu" id="quick-add-menu">
+      <div class="quick-add-item" id="quick-add-habit-btn">
+        <span class="quick-add-label">New Habit</span>
+        <div class="quick-add-circle"><i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i></div>
+      </div>
+      <div class="quick-add-item" id="quick-add-task-btn">
+        <span class="quick-add-label">New Task</span>
+        <div class="quick-add-circle"><i data-lucide="list-todo" style="width: 16px; height: 16px;"></i></div>
+      </div>
+      <div class="quick-add-item" id="quick-add-goal-btn">
+        <span class="quick-add-label">New Goal</span>
+        <div class="quick-add-circle"><i data-lucide="target" style="width: 16px; height: 16px;"></i></div>
+      </div>
+      <div class="quick-add-item" id="quick-add-journal-btn">
+        <span class="quick-add-label">Journal Log</span>
+        <div class="quick-add-circle"><i data-lucide="pen-tool" style="width: 16px; height: 16px;"></i></div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ================= MODALS OVERLAYS ================= -->
+  
+  <!-- Add Habit Modal -->
+  <div class="modal-overlay" id="modal-add-habit">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Create New Habit</h3>
+        <button class="modal-close" data-close><i data-lucide="x"></i></button>
+      </div>
+      <form id="modal-habit-form" onsubmit="return false;">
+        <div class="form-group">
+          <label class="form-label">Habit Name</label>
+          <input type="text" id="modal-habit-name" class="form-control" placeholder="e.g. Morning Meditation" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Category</label>
+          <select id="modal-habit-category" class="form-control">
+            <option value="Coding">Coding</option>
+            <option value="Study">Study</option>
+            <option value="Personal">Personal</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Color Theme Accent</label>
+          <div class="color-swatch-picker" id="modal-habit-colors">
+            <div class="color-option selected" data-color="#3b82f6" style="background-color: #3b82f6;"></div>
+            <div class="color-option" data-color="#a855f7" style="background-color: #a855f7;"></div>
+            <div class="color-option" data-color="#10b981" style="background-color: #10b981;"></div>
+            <div class="color-option" data-color="#f43f5e" style="background-color: #f43f5e;"></div>
+            <div class="color-option" data-color="#f59e0b" style="background-color: #f59e0b;"></div>
+          </div>
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn btn-secondary" data-close>Cancel</button>
+          <button type="submit" class="btn btn-primary">Create Habit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Add Task Modal (Used for floating quick-add) -->
+  <div class="modal-overlay" id="modal-add-task">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Create New Task</h3>
+        <button class="modal-close" data-close><i data-lucide="x"></i></button>
+      </div>
+      <form id="modal-task-form" onsubmit="return false;">
+        <div class="form-group">
+          <label class="form-label">Task description</label>
+          <input type="text" id="modal-task-text" class="form-control" placeholder="What needs doing?" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Category</label>
+          <select id="modal-task-category" class="form-control">
+            <option value="Daily">Daily</option>
+            <option value="Weekly">Weekly</option>
+            <option value="Coding">Coding</option>
+            <option value="Study">Study</option>
+            <option value="Personal">Personal</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Priority</label>
+          <select id="modal-task-priority" class="form-control">
+            <option value="low">Low</option>
+            <option value="medium" selected>Medium</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Due Date</label>
+          <input type="date" id="modal-task-due" class="form-control">
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn btn-secondary" data-close>Cancel</button>
+          <button type="submit" class="btn btn-primary">Create Task</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Add Goal Modal -->
+  <div class="modal-overlay" id="modal-add-goal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Create Goal & Milestones</h3>
+        <button class="modal-close" data-close><i data-lucide="x"></i></button>
+      </div>
+      <form id="modal-goal-form" onsubmit="return false;">
+        <div class="form-group">
+          <label class="form-label">Goal Target</label>
+          <input type="text" id="modal-goal-text" class="form-control" placeholder="What is the objective?" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Period</label>
+          <select id="modal-goal-period" class="form-control">
+            <option value="daily">Daily Goal</option>
+            <option value="weekly">Weekly Goal</option>
+            <option value="monthly" selected>Monthly Goal</option>
+            <option value="yearly">Yearly Goal</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Target Deadline</label>
+          <input type="date" id="modal-goal-due" class="form-control">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Notes & Summary</label>
+          <input type="text" id="modal-goal-notes" class="form-control" placeholder="Notes, instructions or references">
+        </div>
+        
+        <!-- Interactive Milestones add block -->
+        <div class="form-group">
+          <label class="form-label">Goal Milestones (Sub-tasks)</label>
+          <div class="added-milestone-row">
+            <input type="text" id="modal-milestone-input" class="form-control" placeholder="Add milestone step...">
+            <button type="button" id="modal-milestone-add-btn" class="btn btn-secondary" style="height: 42px;"><i data-lucide="plus"></i></button>
+          </div>
+          <div class="added-milestones-container" id="modal-milestone-list">
+            <!-- Items added in real time -->
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="btn btn-secondary" data-close>Cancel</button>
+          <button type="submit" class="btn btn-primary">Create Goal</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Achievement Toast popup -->
+  <div id="achievement-toast" style="position: fixed; bottom: 2.5rem; left: 2.5rem; background: rgba(15, 23, 42, 0.95); border: 1.5px solid var(--accent-rose); border-radius: var(--radius-md); box-shadow: var(--shadow-lg), 0 0 20px rgba(244, 63, 94, 0.25); backdrop-filter: var(--glass-blur); padding: 1.25rem; display: flex; align-items: center; gap: 1rem; transform: translateY(100px); opacity: 0; pointer-events: none; transition: all var(--transition-slow); z-index: 2000; max-width: 320px;">
+    <div style="width: 44px; height: 44px; border-radius: var(--radius-round); background: rgba(244, 63, 94, 0.15); display: flex; align-items: center; justify-content: center; color: var(--accent-rose); font-size: 1.25rem; flex-shrink: 0;">
+      <i data-lucide="award"></i>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 0.15rem;">
+      <span style="font-size: 0.7rem; font-weight: 700; color: var(--accent-rose); text-transform: uppercase; letter-spacing: 0.05em;">New Achievement!</span>
+      <span id="toast-title" style="font-size: 0.85rem; font-weight: 700; color: var(--text-primary);">Hydration Hero</span>
+      <span id="toast-desc" style="font-size: 0.75rem; color: var(--text-secondary);">Hit daily water target.</span>
+    </div>
+  </div>
+
+  <!-- Standard external script libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.344.0/dist/umd/lucide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- ESM App loader -->
+  <script type="module" src="src/js/app.js"></script>
+</body>
+</html>
