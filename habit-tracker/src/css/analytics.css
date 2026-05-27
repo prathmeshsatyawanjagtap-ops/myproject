@@ -1,0 +1,205 @@
+/* analytics.css - Analytics & progress chart styles */
+
+.analytics-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Charts Grid */
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.chart-card {
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-wrapper {
+  position: relative;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+}
+
+/* Heatmap Section styling */
+.heatmap-card {
+  width: 100%;
+}
+
+.heatmap-scroll-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  padding: 1rem 0;
+  border-radius: var(--radius-sm);
+}
+
+.heatmap-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 720px; /* Force minimum width to keep full grid visible */
+  margin: 0 auto;
+}
+
+.heatmap-days-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(7, 12px); /* 7 rows for days of week */
+  gap: 3px;
+}
+
+.heatmap-cell {
+  width: 12px;
+  height: 12px;
+  border-radius: 2.5px;
+  background-color: var(--border-color);
+  cursor: pointer;
+  position: relative;
+  transition: transform var(--transition-fast), filter var(--transition-fast);
+}
+
+.heatmap-cell:hover {
+  transform: scale(1.2);
+  z-index: 10;
+  filter: brightness(1.2);
+}
+
+/* Color levels for completion count */
+.heatmap-cell.level-0 {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+:root.theme-light .heatmap-cell.level-0 {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.heatmap-cell.level-1 {
+  background-color: rgba(16, 185, 129, 0.25);
+  box-shadow: 0 0 2px rgba(16, 185, 129, 0.1);
+}
+.heatmap-cell.level-2 {
+  background-color: rgba(16, 185, 129, 0.5);
+  box-shadow: 0 0 3px rgba(16, 185, 129, 0.2);
+}
+.heatmap-cell.level-3 {
+  background-color: rgba(16, 185, 129, 0.75);
+  box-shadow: 0 0 5px rgba(16, 185, 129, 0.35);
+}
+.heatmap-cell.level-4 {
+  background-color: rgba(16, 185, 129, 1);
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
+}
+
+/* Tooltip on heatmap cell */
+.heatmap-cell::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 140%;
+  left: 50%;
+  transform: translateX(-50%) translateY(5px);
+  background-color: var(--bg-surface-solid);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all var(--transition-fast);
+  z-index: 20;
+  box-shadow: var(--shadow-md);
+}
+
+.heatmap-cell:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Heatmap Footer Legend */
+.heatmap-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.heatmap-legend {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.heatmap-legend-cell {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+/* Trend Statistics Grid */
+.trend-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.trend-card {
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.trend-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+}
+
+.trend-icon-box.blue { background-color: rgba(59, 130, 246, 0.12); color: var(--accent-cyan); }
+.trend-icon-box.purple { background-color: rgba(139, 92, 246, 0.12); color: var(--accent-violet); }
+.trend-icon-box.emerald { background-color: rgba(16, 185, 129, 0.12); color: var(--accent-emerald); }
+.trend-icon-box.rose { background-color: rgba(244, 63, 94, 0.12); color: var(--accent-rose); }
+
+.trend-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.trend-val {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.trend-lbl {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+  .trend-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .trend-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
